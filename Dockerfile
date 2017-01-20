@@ -8,3 +8,4 @@ RUN git clone https://github.com/google/bazel.git /bazel && cd /bazel && git tag
 
 RUN /bazel/compile.sh
 
+ENV PATH="${PATH}:/bazel/output"
